@@ -1,4 +1,4 @@
-function myFunction() {
+function myFunction(event) {
     let bpm = document.getElementById('bpm').value;
     let semitone = document.getElementById('semitone').value;
     
@@ -12,4 +12,5 @@ function myFunction() {
         bpmHeader.innerHTML = newBPM;
         document.getElementById('form').appendChild(bpmHeader);
    }
+   event.preventDefault();
 }
